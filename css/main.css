@@ -14,30 +14,7 @@ body {
   margin: 0 auto;
 }
 
-.container {
-  width: 1150px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 14px;
-  padding-right: 14px;
-}
-
-.container:before, .container:after {
-  content: " ";
-  display: table;
-}
-
-*:before, *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.container:after {
-  clear: both;
-}
-
-/*header*/
+/*estilo menú fijo*/
 
 header {
   background-color: #2c3e50;
@@ -69,42 +46,33 @@ ul {
   list-style: none;
 }
 
-li {
+.menu li {
   list-style: none;
   padding: 9px;
+  cursor: pointer;
 }
 
-.profile {
-  margin-left: 549px;
-  position: relative;
-  top: 198px;
+.menu li:hover{
+  color: #18bc9c;
 }
-
+/*color de fondo*/
 .fondo {
   width: 100%;
   height: 755px;
   background: #18BC9C;
 }
-
+/*primera imagen*/
+.profile {
+  margin-left: 549px;
+  position: relative;
+  top: 198px;
+}
+/*titulos*/
 .text {
   color: #fff;
   text-align: center;
   position: relative;
   top: 210px;
-}
-
-hr {
-  margin-top: -20px;
-  margin-bottom: 50px;
-  max-width: 250px;
-  background-color: #fff;
-  border: solid 2.5px;
-}
-
-.fa {
-  width: 46px;
-  font-size: 2em;
-  background: #18BC9C;
 }
 
 h2 {
@@ -120,7 +88,21 @@ h2 {
   font-size: 32px;
   padding-top: 26px;
 }
+ /*estilos estrella*/
+hr {
+  margin-top: -20px;
+  margin-bottom: 50px;
+  max-width: 250px;
+  background-color: #fff;
+  border: solid 2.5px;
+}
 
+.fa {
+  width: 46px;
+  font-size: 2em;
+  background: #18BC9C;
+}
+/*estilos de section de imagenes*/
 .fondo2 {
   width: 100%;
   height: 833px;
@@ -135,7 +117,7 @@ h2 {
   font-weight: bold;
   margin-right: 245px;
 }
-
+/*imagenes*/
 .foto img {
   width: 350px;
   height: 254px;
@@ -146,7 +128,7 @@ h2 {
   bottom: 34px;
   left: 103px;
 }
-
+/*estrella*/
 .fondo2 .fa {
   width: 46px;
   font-size: 2em;
@@ -158,7 +140,7 @@ h2 {
   color: #2C3E50;
   border: solid 3px;
 }
-
+/*estilo de section de info*/
 .fondo3 {
   width: 100%;
   height: 590px;
@@ -167,7 +149,7 @@ h2 {
   color: #fff;
   padding-top: 64px;
 }
-
+/*titulo y parrafos*/
 .fondo3 a {
   font-family: 'Montserrat', sans-serif;
   color: #fff;
@@ -185,37 +167,38 @@ h2 {
   margin-left: 3px;
   padding-top: 0px;
 }
-
+/*ajusta la estrella y el subrayado por debajo del titulo*/
 .text1, .text2, .text3 {
   margin-top: 45px;
   margin-left: 1px;
 }
-
+/*botón de decarga*/
 .download {
   width: 215px;
   height: 49px;
-  border: solid 2px;
-  border-color: #fff;
+  border: solid 2px #fff;
   margin-left: 563px;
   margin-top: 33px;
   border-radius: 5px;
   font-family: 'Lato', sans-serif;
   font-size: 20px;
+  cursor: pointer;
 }
-
+/*icono del botón*/
 .download .fa {
   font-size: 20px;
   margin-top: 15px;
   margin-right: -13px;
 }
-
+/*estilo de section del formulario*/
 .fondo4 {
   width: 100%;
   height: 809px;
   text-align: center;
   margin-top: 59px;
+  list-style: none;
 }
-
+/*estilos del titulo y la estrella*/
 .fondo4 a {
   font-family: 'Montserrat', sans-serif;
   color: #212529;
@@ -234,7 +217,7 @@ h2 {
 .text3 hr {
   color: #2C3E50;
 }
-
+/*estilo del formulario*/
 .form input {
   font-family: 'Lato', sans-serif;
   color: #868E96;
@@ -250,13 +233,12 @@ h2 {
   width: 765px;
   max-width: 765px;
 }
-
+/*estilos del botón send*/
 .send {
-  width: 88px;
-  height: 52px;
+  width: 90px;
+  height: 54px;
   border: solid 2px;
   border-radius: 5px;
-  border-color: #18BC9C;
   background: #18BC9C;
   font-family: 'Lato', sans-serif;
   color: #fff;
@@ -264,14 +246,20 @@ h2 {
   font-size: 23px;
   margin-top: 124px;
   margin-left: 310px;
+  cursor: pointer;
 }
 
+.send:hover{
+  background: #0f816b;
+  border-color:
+}
+/*color d fondo del footer*/
 .fondo5 {
   width: 100%;
   height: 392px;
   background: #2C3E50
 }
-
+/*estilos del texto del footer*/
 .box {
   display: flex;
   margin-left: 202px;
@@ -286,7 +274,7 @@ h2 {
   margin-top: 17px;
   margin-right: 126px;
 }
-
+/*estilos de iconos de redes sociales*/
 .box2 {
   width: 308px;
   margin-top: 17px;
@@ -301,6 +289,13 @@ h2 {
   height: 49px;
   padding: inherit;
   width: 49px;
+  cursor: pointer;
+}
+
+.redes .fa:hover{
+  background: #fff;
+  color: #18bc9c;
+  border-color: #fff;
 }
 
 .redes {
@@ -308,20 +303,27 @@ h2 {
 }
 
 .redes li {
-  margin-right: -252px;
+  margin-right: -258px;
+  list-style: none;
+  padding: 9px;
 }
-
+/*estilos de div box3 que contiene un link*/
 .box3 {
   width: 347px;
   margin-top: 17px;
   margin-left: 56px;
 }
 
+.box3 strong{
+  color: #18bc9c;
+  cursor: pointer;
+}
+
 .box1 p, .box3 p {
   font-family: 'Lato', sans-serif;
   font-size: 20px;
 }
-
+/*estilo aviso legal*/
 .Copyright {
   font-family: 'Lato', sans-serif;
   color: #fff;
